@@ -29,7 +29,7 @@
           <tbody>
             <tr>
               <td>
-                <%= link_to user_path(@user.id),method: :get do %>
+                <%= link_to user_path(@book.id),method: :get do %>
                   <%= image_tag @user.get_image %><br>
                   <%= @user.name %>
                 <% end %>

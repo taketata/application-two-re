@@ -45,7 +45,11 @@
           <% @books.each do |book| %>
           <tbody>
             <tr>
-              <th><%= image_tag @user.get_image %></th>
+              <th>
+                <% @users.each do |user| %>
+                  <%= image_tag user.get_image %>
+                <% end %>
+                </th>
               <th>
                 <%= link_to book_path(book.id),method: :get do %>
                  <%= book.title %>
