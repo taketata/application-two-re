@@ -34,7 +34,7 @@ class BooksController < ApplicationController
     if @book.user == current_user
       render :edit
     else
-      redirect_to new_user_session_path
+      redirect_to books_path
     end
   end
 
